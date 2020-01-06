@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lafilgroup.merchandisinginventory">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+
+        <activity
+            android:name=".Login"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".sendfeedback.SendFeedback" />
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity android:name=".profile.UpdateContact" />
+        <activity android:name=".profile.ChangePassword" />
+        <activity android:name=".profile.ChangePicture" />
+        <activity
+            android:name=".storelogin.SelectSchedule"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".storelogin.LoginTakePicture" />
+        <activity
+            android:name=".stockinventory.AddPhysicalCount"
+            android:screenOrientation="portrait" />
+        <activity android:name=".stockinventory.AddDeliveryCount" />
+        <activity android:name=".stockinventory.ScanBarcode" />
+        <activity android:name=".stockinventory.SearchItem" />
+        <activity android:name=".sendfeedback.MessageItems" />
+        <activity android:name=".stockinventory.PhysicalCountDetails" />
+        <activity android:name=".stockinventory.AddReturnCount" />
+        <activity android:name=".logs.LogsItem" />
+        <activity android:name=".stockinventory.ConfirmSubmit" />
+        <activity android:name=".storelogin.DownloadData" />
+        <activity android:name=".offline.OfflineConfirmSubmit"></activity>
+    </application>
+
+</manifest>

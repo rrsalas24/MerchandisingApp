@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgPicture2"
+        android:layout_width="320dp"
+        android:layout_height="155dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_boarder_header"
+        android:scaleType="fitXY"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="31dp" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:text="Remarks:"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="266dp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="207dp"
+        android:layout_height="114dp"
+        android:background="@android:drawable/edit_text"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="266dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_round_button"
+        android:text="Confirm"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="398dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="57dp"
+        android:layout_height="35dp"
+        android:background="@drawable/custom_round_button"
+        android:text="View Details"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        tools:layout_editor_absoluteX="282dp"
+        tools:layout_editor_absoluteY="438dp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="135dp"
+        android:layout_height="49dp"
+        android:background="@drawable/custom_round_button"
+        android:text="Take Picture"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="201dp" />
+
+</android.support.constraint.ConstraintLayout>

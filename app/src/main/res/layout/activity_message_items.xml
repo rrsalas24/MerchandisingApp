@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lafilgroup.merchandisinginventory.sendfeedback.MessageItems">
+
+    <ListView
+        android:id="@+id/lvwMessageItems"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll" />
+
+    <LinearLayout
+        android:id="@+id/lnrSend"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txtMessage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/editbox_background_normal"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Enter Message Here"
+            android:inputType="textMultiLine"
+            android:maxLength="255"
+            android:textSize="14sp"
+            tools:lineSpacingMultiplier="1" />
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_weight="3"
+            android:background="@drawable/custom_round_button"
+            android:text="Send"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</LinearLayout>

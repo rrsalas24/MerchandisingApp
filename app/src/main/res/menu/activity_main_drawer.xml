@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menuHome"
+            android:icon="@drawable/ic_home"
+            android:iconTintMode="add"
+            android:title="Home" />
+        <item
+            android:id="@+id/menuProfile"
+            android:icon="@drawable/ic_user"
+            android:title="Profile" />
+        <item
+            android:id="@+id/menuSchedule"
+            android:icon="@drawable/ic_clock"
+            android:title="Schedule" />
+        <item
+            android:id="@+id/menuStockInventory"
+            android:icon="@drawable/ic_to_do"
+            android:title="Submit Inventory" />
+
+        <item
+            android:id="@+id/menuLogs"
+            android:icon="@drawable/ic_blog"
+            android:title="Inventory Logs" />
+
+        <item
+            android:id="@+id/menuOfflineSaving"
+            android:icon="@drawable/ic_ticket"
+            android:title="Offline Inventory" />
+
+        <item
+            android:id="@+id/menuAnnouncement"
+            android:icon="@drawable/ic_pin"
+            android:title="Announcements" />
+
+        <item
+            android:id="@+id/menuSendFeedback"
+            android:icon="@drawable/ic_inbox"
+            android:title="Messages" />
+
+        <item
+            android:id="@+id/menuAbout"
+            android:icon="@drawable/ic_information"
+            android:title="About" />
+
+    </group>
+
+    <item
+        android:id="@+id/menuLogout"
+        android:icon="@drawable/ic_power"
+        android:title="Logout" />
+</menu>

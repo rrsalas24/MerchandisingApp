@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.lafilgroup.merchandisinginventory.storelogin.DownloadData">
+
+    <TextView
+        android:id="@+id/txtItemBalance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Item Balance"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/txtInventoryType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Inventory Type"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/txtBORemarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="BO Remarks"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/txtUnable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="ERROR IN DOWNLOADING"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="0.05"
+        android:background="@drawable/custom_round_button"
+        android:text="Refresh"
+        android:textColor="@color/white"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="0.05"
+        android:background="@drawable/custom_round_button"
+        android:text="Proceed to store login"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+</LinearLayout>
