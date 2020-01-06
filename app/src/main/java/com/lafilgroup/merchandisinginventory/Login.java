@@ -229,27 +229,27 @@ public class Login extends AppCompatActivity implements View.OnClickListener
 
     public void deleteImage()
     {
-        File dir = new File(Environment.getExternalStorageDirectory().getPath(), "MyFolder/Images");
-        if (dir.isDirectory())
-        {
-            String[] children = dir.list();
-            for (int i = 0; i < children.length; i++)
-            {
-                new File(dir, children[i]).delete();
-            }
-        }
+//        File dir = new File(Environment.getExternalStorageDirectory().getPath(), "MyFolder/Images");
+//        if (dir.isDirectory())
+//        {
+//            String[] children = dir.list();
+//            for (int i = 0; i < children.length; i++)
+//            {
+//                new File(dir, children[i]).delete();
+//            }
+//        }
     }
 
     public void deleteImageAll()
     {
-        File dir = new File(Environment.getExternalStorageDirectory().getPath(), "Pictures");
-        if (dir.isDirectory())
-        {
-            String[] children = dir.list();
-            for (int i = 0; i < children.length; i++)
-            {
-                new File(dir, children[i]).delete();
-            }
-        }
+//        File dir = new File(Environment.getExternalStorageDirectory().getPath(), "Pictures");
+//        if (dir.isDirectory())
+//        {
+//            String[] children = dir.list();
+//            for (int i = 0; i < children.length; i++)
+//            {
+//                new File(dir, children[i]).delete();
+//            }
+//        }
     }
 }
